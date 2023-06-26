@@ -2,122 +2,129 @@
 <html lang="en">
 
 <head>
-    <title>Quản trị Admin</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Font-icon css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!-- or -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
-    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-  
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Quản trị Admin</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Font-icon css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body class="app sidebar-mini rtl">
 
-    <style>
-        .btn-save{
-          background-color: rgb(166 236 171);
-          color: rgb(1 123 10);
-          /* width: 100px; */
-          font-weight: 600;
-          letter-spacing: 1px;
-        }
-        .btn-cancel{
-          background-color: rgb(255 197 197);
-          color: rgb(190, 40, 40);
-          /* width: 100px; */
-          font-weight: 600;
-          letter-spacing: 1px;
-        }
-        .success-message {
-          position: fixed;
-          width: 290px;
-          bottom: 20px;
-          right: 20px;
-          padding: 10px;
-          background-color: #d7f5d7;
-          color: black;
-          border-radius: 4px;
-          display: none;
-        }
-        .success-sua {
-          position: fixed;
-          width: 250px;
-          top: 80px;
-          right: 20px;
-          padding: 10px;
-          background-color: #9df99d;
-          color: black;
-          border-radius: 4px;
-          display: none;
-          font-weight: bold;
-         
-        }
-        .success-sua i {
-          margin-right: 10px;
-        }
-        #sampleTable.table {
-          margin-left: 0;
-        }
-        .success-message {
-          position: fixed;
-          width: 250px;
-          top: 80px;
-          right: 20px;
-          padding: 10px;
-          background-color: #9df99d;
-          color: black;
-          border-radius: 4px;
-          display: none;     
-          font-weight: bold;
-        }
-        .success-message i {
-          margin-right: 10px;
-        }
+  <style>
+  
+    .btn-save {
+      background-color: rgb(166 236 171);
+      color: rgb(1 123 10);
+      /* width: 100px; */
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
 
-        .form-group.col-md-6 {
-          display: flex;
-          align-items: center;
-          margin-bottom: 35px;
-        }
-    
-        .form-group {
-          position: relative;
-          /* container cần có position: relative */
-        }
-    
-        .form-group input {
-          margin-bottom: 0;
-          margin-left: 50px;
-          width: 350px;
-        }
-    
-        .form-group .abc {
-          position: absolute;
-          bottom: -22px;
-          left: 170px;
-          font-size: 13px;
-          color: red;
-        }
-    
-        .control-label {
-          white-space: nowrap;
-          margin-left: 20px;
-    
-    
-        }
-        
-    </style>
+    .btn-cancel {
+      background-color: rgb(255 197 197);
+      color: rgb(190, 40, 40);
+      /* width: 100px; */
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .success-message {
+      position: fixed;
+      width: 290px;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #d7f5d7;
+      color: black;
+      border-radius: 4px;
+      display: none;
+    }
+
+    .success-sua {
+      position: fixed;
+      width: 250px;
+      top: 80px;
+      right: 20px;
+      padding: 10px;
+      background-color: #9df99d;
+      color: black;
+      border-radius: 4px;
+      display: none;
+      font-weight: bold;
+
+    }
+
+    .success-sua i {
+      margin-right: 10px;
+    }
+
+    #sampleTable.table {
+      margin-left: 0;
+    }
+
+    .success-message {
+      position: fixed;
+      width: 250px;
+      top: 80px;
+      right: 20px;
+      padding: 10px;
+      background-color: #9df99d;
+      color: black;
+      border-radius: 4px;
+      display: none;
+      font-weight: bold;
+    }
+
+    .success-message i {
+      margin-right: 10px;
+    }
+
+    .form-group.col-md-6 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+
+    .form-group {
+      position: relative;
+      /* container cần có position: relative */
+    }
+
+    .form-group input {
+      margin-bottom: 0;
+      margin-left: 50px;
+      width: 350px;
+    }
+
+    .form-group .abc {
+      position: absolute;
+      bottom: -22px;
+      left: 170px;
+      font-size: 13px;
+      color: red;
+    }
+
+    .control-label {
+      white-space: nowrap;
+      margin-left: 20px;
+
+
+    }
+  </style>
   <header class="app-header">
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
 
@@ -141,15 +148,16 @@
     <ul class="app-menu">
 
       <li><a class="app-menu__item " href="table-data-table.html"><i class='app-menu__icon fa-solid fa-users'></i>
-        <span class="app-menu__label">Quản lý nhân viên</span></a></li>
-        <!-- <i class='app-menu__icon bx bx-purchase-tag-alt'></i> -->
-    <li><a class="app-menu__item active " href="table-data-product.html"><i class="app-menu__icon fa-solid fa-location-dot" ></i>
-      <span class="app-menu__label">Quản lý tour</span></a>
-    </li>
-    
-    <li><a class="app-menu__item" href="quan-ly-bao-cao.html"><i
-          class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Thống kê doanh thu</span></a>
-    </li>
+          <span class="app-menu__label">Quản lý nhân viên</span></a></li>
+      <!-- <i class='app-menu__icon bx bx-purchase-tag-alt'></i> -->
+      <li><a class="app-menu__item active " href="table-data-product.html"><i
+            class="app-menu__icon fa-solid fa-location-dot"></i>
+          <span class="app-menu__label">Quản lý tour</span></a>
+      </li>
+
+      <li><a class="app-menu__item" href="quan-ly-bao-cao.html"><i
+            class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Thống kê doanh thu</span></a>
+      </li>
     </ul>
   </aside>
   <main class="app-content">
@@ -169,7 +177,8 @@
             <form class="row">
               <div class="form-group col-md-6" style="display: flex; align-items: center;">
                 <label class="control-label">Mã nhân viên:</label>
-                <input class="form-control" type="text" id="input-ma" placeholder="" style="margin-left: 45px ;width: 350px;">
+                <input class="form-control" type="text" id="input-ma" placeholder=""
+                  style="margin-left: 45px ;width: 350px;">
                 <div id="errorMa" class="abc text-danger"></div>
               </div>
               <div class="form-group col-md-6" style="padding-left: 35px">
@@ -225,18 +234,20 @@
                   <div id="errorChucvu" class="abc text-danger"></div>
                 </div>
               </div>
-        
+
 
           </div>
           <div>
             <div>
-                <div class="button-container" style="text-align: right; margin-top: 20px;">
-                  <button class="btn btn-save" style="margin-right: 0; color:black" type="button" value="Submit" onclick="return checkAll()">
-                    Lưu lại
-                  </button>
-                  <a class="btn btn-cancel " style="margin-right: 50px;margin-left: 20px;color:black" href="table-data-table.html">Hủy bỏ</a>
-                </div>
+              <div class="button-container" style="text-align: right; margin-top: 20px;">
+                <button class="btn btn-save" style="margin-right: 0; color:black" type="button" value="Submit"
+                  onclick="return checkAll()">
+                  Lưu lại
+                </button>
+                <a class="btn btn-cancel " style="margin-right: 50px;margin-left: 20px;color:black"
+                  href="table-data-table.html">Hủy bỏ</a>
               </div>
+            </div>
           </div>
         </div>
         <div id="success-message" class="success-sua"><i class="fa-solid fa-check"></i> Sửa nhân viên thành công</div>
@@ -378,7 +389,7 @@
       window.location.href = './table-data-table.html';
       return true;
 
-     
+
 
 
 
