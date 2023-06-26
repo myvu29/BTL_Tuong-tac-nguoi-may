@@ -207,9 +207,7 @@
 
 
 <script>
-  //let id = localStorage.getItem("selectedTourId");
- // let tours = JSON.parse(localStorage.getItem("tours"));
-  //let tour = tours.find(item => item.ma == id);
+
   var tourInfo = JSON.parse(localStorage.getItem("selectedTour"));
   if (tourInfo) {
     console.log(tourInfo);
@@ -220,7 +218,7 @@
     document.getElementById("input-gia").value = tourInfo.gia;
     document.getElementById("input-songuoi").value = tourInfo.songuoi;
   }
-  //var tourInfo = JSON.parse(localStorage.getItem("selectedTour"));
+
 
  
 //Sự kiện khi ấn nút save
